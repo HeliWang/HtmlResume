@@ -30,7 +30,7 @@
             min-height: initial;
             box-shadow: initial;
             background: initial;
-            page-break-after: always;
+            /* page-break-after: always; */
     }
 	
 	/*
@@ -52,14 +52,14 @@ h1 {
   font-size: 24px;
   font: 'merriweather', sans-serif, Georgia, "Times New Roman", serif;
   font-weight: normal;
-  margin: 5px 0 0;
+  margin: 0px 0 0;
 }
-.heli kbd { font-size: 11pt; }
+.heli p { font: "Times New Roman"; font-size: 10pt; }
 .heli p {margin-top: 0;  margin-bottom: 0;}
 
 .section {
   border-bottom: 1px solid #ddd;
-  padding: 10px 0 10px;
+  padding: 5px 0 5px;
 }
 .section:last-child { border: none }
 .row:before, .row:after {
@@ -99,33 +99,36 @@ h2, h3 { margin-top: 0px }
 .col { float: left }
 .col-right { float: right }
 
-.section-text { width: 15cm; margin: 5px 0 5px;}
+.section-text { width: 15cm; margin: 3px 0 3.5px;}
 .subsection { margin: 5px 0 0 }
 .desc { font-size: 10pt;
         margin: auto auto auto auto;}
     
 
-ul{
-  padding-left:15px;
-}
-
 ul.skills{
-  float:left;
-  width:30%;
-  padding-left:0px;
-  margin: 0 20px 0 0;
+		font-size: 10pt;
+        margin: auto auto auto auto;
 }
 
 ul.skills li{
-  list-style: none;
-  font-size:16px;
-  margin-bottom:10px;
+  margin-bottom: 4px;
 }
 
 ul.skills li:last-child{
-  margin:0;
+  margin-bottom: 0;
 }
 
+ul.awards{
+		font-size: 10pt;
+        margin: auto auto auto auto;
+}
+
+ul.awards li{
+  margin-bottom: 0px;
+}
+
+
+.section-text-skills { width: 590px; margin: 0 0 5px;}
 </style>
 </head>
   
@@ -134,10 +137,13 @@ ul.skills li:last-child{
     <div class="section row">
       <div class="heli">
        <h1>Heli (Harlan) Wang</h1> 
-         <p>
-           <kbd> 2A Computer Science, University of Waterloo </kbd>
+	       <p>
+          2A Computer Science, Student ID 20552080
            </p>
-           <p> <kbd>heliwang.me &nbsp; heli.wang@uwaterloo.ca &nbsp; 226.978.7328</kbd>
+         <p>
+           268 Phillip Street, Waterloo, Ontario, Canada, N2L6G9
+           </p>
+           <p> heliwang.me &nbsp; heli.wang@uwaterloo.ca &nbsp; 226.978.7328
          </p>
       </div>
      </div>
@@ -152,37 +158,117 @@ ul.skills li:last-child{
                     </div>
                     <div class="row subsection">
                         <div class="emph col">Candidate for Bachelor of Computer Science </div>
-                        <div class="col-right light">Expected April 2019</div>
+                        <div class="col-right light">September 2014 - Present</div>
                     </div>
                     <ul class="desc">
                         <li>Honours, Co-operative Program with Digital Hardware Option</li>
-						<li>91.7% cumulative average, 93.5% 1B term average</li>
+						<li>93.5% 1B term average, 91.7% cumulative average</li>
                         <li>Dean's Honor List: Fall 2014 (1A term), Winter 2015 (1B term)</li>
                     </ul>
                 </div>
         </div>
       
-	   <div class="section row">
-                <h2 class="col">Skills</h2>
+	  
+	  
+            <div class="section row">
+                <h2 class="col">Project</h2>
                 <div class="section-text col-right">
                     <div class="row">
                         <div class="col">
-                            <h3> University of Waterloo, Waterloo, ON</h3>
+                            <h3>Accomplished under Innovative Talents Cultivation Plan, Beijing No.35 High School</h3>
                         </div>
                     </div>
                     <div class="row subsection">
-                        <div class="emph col">Candidate for Bachelor of Computer Science </div>
-                        <div class="col-right light">Expected April 2019</div>
+                               <div class="light">September 2009 - June 2012</div>
                     </div>
-                    <ul class="desc">
-                        <li>Digital Hardware Option</li>
-						<li>91% cumulative average, 92.3% math faculty average</li>
-                        <li>Dean's Honor List: Fall 2014 (1A term), Winter 2015 (1B term)</li>
-                    </ul>
+                    <div> <i>MicroVita AntiSpyware </i> - A comprehensive desktop software that scans for viruses automatically, while monitoring threads and files.
+                    </div>  <div>  </div> 
+                </div>
+				<div class="section-text-skills col-right">
+				         <ul class="skills">
+                        <li>Designed an anti-virus engine based on analyzing characteristic codes from PE files, by getting the starting address of the PE Resources Section from Section Table, extracting a few bytes from resources code, and looking up the virus gene database.</li>
+                        <li>Devised a method to increase the accuracy of virus scanning, by setting up a repository of trusted programs and checking a file’s MD5 value. Both Cloud and Cache databases were used in order to speed up the checking process.</li>
+                        <li>Adopted a unique strategy to detect unknown viruses, through verifying file signatures, observing for any suspicious changes in the Windows Registry made by executable files, and listening to particular ports. Files infected by unknown viruses would be shared to worldwide virus analyzing centers through SMTP.</li>
+                        <li>Developed an interactive and easy-to-use interface by applying SkinSharp library. All components of this software were modularized and implemented by EPL.</li>
+                        <li>Promoted the software by submitting it to more than 10 Software/App Stores; Downloaded over 40,000 times; Certificated by China Copyright Agency (No: 0288295, 2011/04/29)</li>
+				    </ul>
+				</div>
+			 </div>
+			
+			
+	   <div class="section row">
+                <h2 class="col">Skills</h2>
+                <div class="section-text-skills col-right">
+                    <ul class="skills">
+                        <li>Eight years desktop software development experience in EPL (an object oriented RAD environment). Gained experience from publishing 40+ open source projects in EPL development community</li>
+						<li>Familiar with XHTML, CSS, JavaScript, XML, PHP, SQL, C, C++, Java, Eclipse with ADT and PLT Scheme/Racket</li>
+                        <li>Proficient using Windows batch script, shell, Git, GitHub, SinaAppEngine, hosting platforms like cpanel</li>
+						<li>Experienced in Windows Administrative Tools such as Windows Registry and Bootable Disc. Extensive knowledge in DOS, Mac OS X and Linux</li>
+				        <li>Competent with all version office suites, Adobe Acrobat and Corel VideoStudio</li>
+					    <li>Familiar with PayPal APIs. Half year trading experience in Alibaba e-commerce system</li>
+						</ul>
                 </div>
         </div>
 
-	
-  </div>
-</body>
+
+            <div class="section row">
+                <h2 class="col">Experience</h2>
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Individual Shop on Taobao B2C/C2C e-commerce platform, Alibaba Group</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                               <div class="light">January 2014 - September 2014</div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+				<div class="section-text-skills col-right">
+				       <ul class="skills">
+                        <li>Wrote a tutorial e-book for College Entrance Exam in Mathematics using MathType, WPS and Adobe Acrobat and sold the e-book on the online shop. All pages in the e-book were protected by DRM to prevent illegal copy. </li>
+                        <li>Crafted the product description pages by HTML, CSS and JavaScript. Booming page views to more than 100 per day by elaborately selecting key words of pages and adopting SEO preferred HTML tags.</li>
+                        <li>Developed a software to send e-book series number automatically after receiving any order. Over ¥5,000 (CNY) profit was earned with 96% positive feedback from customers. </li>
+                      </ul>
+				</div>
+			 </div>
+			
+			        <div class="section row">
+                <h2 class="col">Awards</h2>
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>National and Provincial awards</h3>
+                        </div>
+                    </div>
+                </div>
+				<div class="section-text-skills col-right">
+				       <ul class="awards">
+                        <li>Silver Prize in Campus Invention and Innovation, Sipo China Patent Annual Conference </li>
+                        <li>The Third Prize in the 11th Annual Awards Program for Tomorrow Scientists</li>
+                        <li>The Third Prize in the 11th National High School Students Programming Design Activity</li>
+						<li>The First Prize in the 7th Beijing Youth Robotics Competition</li>
+						</ul>
+				</div>
+				<div class="section-text col-right">
+                        <div class="row col">
+                            <h3>Awards and Scholarship granted by University of Waterloo</h3>
+                        </div>
+                </div>
+				<div class="section-text-skills col-right">
+				       <ul class="awards">
+                        <li>Certificate of Distinction for Euclid Contest (Top 1% of all competitors)</li>
+                        <li>University of Waterloo International Student Entrance Scholarship ($10,000)</li>
+                        <li>President's Scholarship of Distinction, 95-100% entrance average ($2,000) </li>
+						</ul>
+				</div>
+				<div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Other 2 Provincial, 3 District, 10 high school awards are not listed.</h3>
+                        </div>
+                    </div>
+                </div>
+			 </div>
 </html>
